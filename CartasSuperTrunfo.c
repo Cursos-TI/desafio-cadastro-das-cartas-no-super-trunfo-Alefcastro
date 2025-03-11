@@ -38,7 +38,7 @@ int main() {
     printf("Digite o numero de pontos turisticos 1:\n");
     scanf("%d", &numerodepontosturisticos1);
 
-    printf("Nome do Estado : %s\n", estado1);
+    printf("Nome do Estado: %s\n", estado1); // preciso corrigir essa parte
     printf("Codigo da carta: %s\n", codigodacarta1);
     printf("Nome da Cidade: %s\n", nomedacidade1);
     printf("Populacao: %d\n", populacao1);
