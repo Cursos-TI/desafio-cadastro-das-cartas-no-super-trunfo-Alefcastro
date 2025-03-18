@@ -10,7 +10,8 @@ int main() {
 
 
     char estado1, estado2;
-    char codigo1[10], codigo2[10];
+    char codigo1[10];
+    char codigo2[10];
     char nomedacidade1[50], nomedacidade2[50];
     int populacao1, populacao2;
     float areakm1, areakm2;
@@ -27,7 +28,7 @@ int main() {
     scanf("%c", &estado1);
 
     printf("Codigo da carta(1-4): \n");
-    scanf("%s", &codigo1);
+    scanf("%s", codigo1);
 
     printf("Cidade: \n");
     scanf("%s", &nomedacidade1);
@@ -62,8 +63,8 @@ int main() {
 
     printf("\nCarta 2: \n");
 
-    printf("Digite o Estado(A-Z): \n");
-    scanf("%c", &estado2);
+    printf("Digite o estadoA-Z: \n");
+    scanf("%c", estado2);
 
     printf("Codigo da carta(1-4): \n");
     scanf("%s", &codigo1);
