@@ -3,48 +3,99 @@
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das Cartas
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+// Teste Alef de Jesus Caires Castro
 
 int main() {
+// Definição de variáveis para cada atributo das cidades 1 e 2
 
 
-    char estado1, estado2 [50];
-    char codigodacarta1, codigodacarta2 [50];
-    char nomedacidade1, nomedacidade2 [50];
+    char estado1, estado2;
+    char codigo1[10], codigo2[10];
+    char nomedacidade1[50], nomedacidade2[50];
     int populacao1, populacao2;
     float areakm1, areakm2;
     float PIB1, PIB2;
-    int numerodepontosturisticos1, numerodepontosturisticos2;
+    int pontosturisticos1, pontosturisticos2;
     
-    printf("Digite o estado 1: \n");
-    scanf("%s", &estado1);
+    //Preenchimento de cadastro da carta 1 ultilizando o scanf
+    //pede ao usuario que insira os dados da primeira carta
 
-    printf("Digite o codigo da carta1: \n");
-    scanf("%s", &codigodacarta1);
+    printf("Carta 1: \n");
 
-    printf("Digite o nome da cidade 1: \n");
+
+    printf("Digite o Estado(A-Z): \n");
+    scanf("%c", &estado1);
+
+    printf("Codigo da carta(1-4): \n");
+    scanf("%s", &codigo1);
+
+    printf("Cidade: \n");
     scanf("%s", &nomedacidade1);
 
-    printf("Digite a populacao da cidade 1: \n");
+    printf("Populacao da cidade: \n");
     scanf("%d", &populacao1);
 
-    printf("Digite a area 1 em km²:\n");
+    printf("Area em km²:\n");
     scanf("%f", &areakm1);
 
-    printf("Digite o PIB 1:\n");
+    printf("PIB:\n");
     scanf("%f", &PIB1);
 
     printf("Digite o numero de pontos turisticos 1:\n");
-    scanf("%d", &numerodepontosturisticos1);
+    scanf("%d", &pontosturisticos1);
 
-    printf("Nome do Estado: %s\n", estado1); // preciso corrigir essa parte
-    printf("Codigo da carta: %s\n", codigodacarta1);
-    printf("Nome da Cidade: %s\n", nomedacidade1);
-    printf("Populacao: %d\n", populacao1);
-    printf("Area em km²: %f\n", areakm1);
+    //Impressão na tela dos dados cadatrados da carta 1 usando o printf 
+    
+    printf("\nCarta 1:\n");
+    
+    printf("Estado: %c\n",estado1); 
+    printf("Codigo da carta: %s\n",codigo1);
+    printf("Nome da Cidade: %s\n",nomedacidade1);
+    printf("Populacao: %d\n",populacao1);
+    printf("Area em km²: %f\n",areakm1);
     printf("PIB: %f\n", PIB1);
-    printf("Numero de pontos turisticos: %d\n", numerodepontosturisticos1);
+    printf("Numero de pontos turisticos: %d\n",pontosturisticos1);
+
+
+    // preenchimento de cadastro da carta 2
+    //mesmo modelo da carta anterior
+
+    printf("\nCarta 2: \n");
+
+    printf("Digite o Estado(A-Z): \n");
+    scanf("%c", &estado2);
+
+    printf("Codigo da carta(1-4): \n");
+    scanf("%s", &codigo1);
+
+    printf("Cidade: \n");
+    scanf("%s", &nomedacidade2);
+
+    printf("Populaçao da cidade: \n");
+    scanf("%d", &populacao2);
+
+    printf("Area em km²: \n");
+    scanf("%f", &areakm2);
+
+    printf("PIB: \n");
+    scanf("%f", PIB2);
+
+    printf("Numero de pontos turisticos: \n");
+    scanf("%d", pontosturisticos2);
+
+    //Impressão na tela dos dados cadastrados da carta 2 usando o printf
+
+    printf("\nCarta 2:\n");
+
+    printf("Estado: %c\n",estado2); 
+    printf("Codigo da carta: %s\n",codigo2);
+    printf("Nome da Cidade: %s\n",nomedacidade2);
+    printf("Populacao: %d\n",populacao2);
+    printf("Area em km²: %f\n",areakm2);
+    printf("PIB: %f\n", PIB2);
+    printf("Numero de pontos turisticos: %d\n",pontosturisticos2);
+
+
 
    
    
