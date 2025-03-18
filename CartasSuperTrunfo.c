@@ -10,8 +10,8 @@ int main() {
 
 
     char estado1, estado2;
-    char codigo1[10];
-    char codigo2[10];
+    char codigo1[20];
+    char codigo2[20];
     char nomedacidade1[50], nomedacidade2[50];
     int populacao1, populacao2;
     float areakm1, areakm2;
