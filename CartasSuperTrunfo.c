@@ -20,7 +20,7 @@ int main() {
     //Preenchimento de cadastro da carta 1 ultilizando o scanf
     //pede ao usuario que insira os dados da primeira carta
 
-    printf("Carta 1: \n");
+    printf("--Preencha os dados da Carta 1--: \n");
 
 
     printf("\nDigite o Estado(A-H): \n");
@@ -36,10 +36,10 @@ int main() {
     scanf("%d", &populacao1);
 
     printf("Area em km²:\n");
-    scanf("%f", &areakm1);
+    scanf("%f", &areakm1);//não utilizar virgula
 
     printf("PIB:\n");
-    scanf("%f", &PIB1);
+    scanf("%f", &PIB1);//não utilizar virgula
 
     printf("Digite o numero de pontos turisticos 1:\n");
     scanf("%d", &pontosturisticos1);
@@ -47,21 +47,21 @@ int main() {
 
     //Impressão na tela dos dados cadatrados da carta 1 usando o printf 
     
-    printf("\nCarta 1:\n");
+    printf("\n--Dados daCarta 1--:\n");
     
     printf("\nEstado: %c\n",estado1); 
     printf("Codigo da carta: %s\n",codigo1);
     printf("Nome da Cidade: %s\n",nomedacidade1);
-    printf("Populacao: %d\n",populacao1);
-    printf("Area: %fkm2\n",areakm1);
-    printf("PIB: %fMilhões de Reais\n", PIB1);
+    printf("Populacao: %d de habitantes.\n",populacao1);
+    printf("Area: %f km².\n",areakm1);
+    printf("PIB: R$ %f Milhões de Reais.\n", PIB1);
     printf("Numero de pontos turisticos: %d\n",pontosturisticos1);
 
 
     // preenchimento de cadastro da carta 2
     //mesmo modelo da carta anterior
 
-    printf("\nCarta 2: \n");
+    printf("\n--Preencha os dados da Carta 2--: \n");
 
     printf("\nDigite o estado(A-H): \n");
     scanf(" %c", &estado2);
@@ -76,10 +76,10 @@ int main() {
     scanf("%d", &populacao2);
 
     printf("Area em km²: \n");
-    scanf("%f", &areakm2);
+    scanf("%f", &areakm2);//não utilizar virgula
 
     printf("PIB: \n");
-    scanf("%f", &PIB2);
+    scanf("%f", &PIB2);//não utilizar virgula
 
     printf("Numero de pontos turisticos: \n");
     scanf("%d", &pontosturisticos2);
@@ -87,14 +87,14 @@ int main() {
 
     //Impressão na tela dos dados cadastrados da carta 2 usando o printf
 
-    printf("Carta 2: /n");
+    printf("\n--Dados da Carta 2--: /n");
 
     printf("\nEstado: %c\n",estado2); 
     printf("Codigo da carta: %s\n",codigo2);
     printf("Nome da Cidade: %s\n",nomedacidade2);
-    printf("Populacao: %d\n",populacao2);
-    printf("Area: %fkm²\n",areakm2);
-    printf("PIB: %fMilhões de reais\n", PIB2);
+    printf("Populacao: %d de habitantes.\n",populacao2);
+    printf("Area: %f km².\n",areakm2); 
+    printf("PIB: R$ %f Milhões de reais.\n", PIB2);
     printf("Numero de pontos turisticos: %d\n",pontosturisticos2);
 
 
