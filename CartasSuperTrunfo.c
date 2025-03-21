@@ -24,11 +24,11 @@ int main() {
     printf("Carta 1: \n");
 
 
-    printf("Digite o Estado(A-Z): \n");
+    printf("Digite o Estado(A-H): \n");
     scanf("%c", &estado1);
 
     printf("Codigo da carta(1-4): \n");
-    scanf("%s", codigo1);
+    scanf("%s", &codigo1);
 
     printf("Cidade: \n");
     scanf("%s", &nomedacidade1);
@@ -64,7 +64,7 @@ int main() {
     printf("\nCarta 2: \n");
 
     printf("Digite o estadoA-Z: \n");
-    scanf("%c", estado2);
+    scanf("%c", &estado2);
 
     printf("Codigo da carta(1-4): \n");
     scanf("%s", &codigo1);
@@ -79,10 +79,10 @@ int main() {
     scanf("%f", &areakm2);
 
     printf("PIB: \n");
-    scanf("%f", PIB2);
+    scanf("%f", &PIB2);
 
     printf("Numero de pontos turisticos: \n");
-    scanf("%d", pontosturisticos2);
+    scanf("%d", &pontosturisticos2);
 
     //Impressão na tela dos dados cadastrados da carta 2 usando o printf
 
