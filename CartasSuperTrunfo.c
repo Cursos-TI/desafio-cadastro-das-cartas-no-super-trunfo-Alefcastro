@@ -16,8 +16,6 @@ int main() {
     float areakm1, areakm2;
     float PIB1, PIB2;
     int pontosturisticos1, pontosturisticos2;
-    float densidade1, perCapita1;
-    float densidade2, perCapita2;
 
     //Preenchimento de cadastro da carta 1 ultilizando o scanf
     //pede ao usuario que insira os dados da primeira carta
@@ -46,9 +44,6 @@ int main() {
     printf("Digite o numero de pontos turisticos 1:\n");
     scanf("%d", &pontosturisticos1);
 
-    densidade1 = populacao1/areakm1;
-
-    perCapita1 = PIB1/populacao1;
 
     //Impressão na tela dos dados cadatrados da carta 1 usando o printf 
     
@@ -58,11 +53,9 @@ int main() {
     printf("Codigo da carta: %s\n",codigo1);
     printf("Nome da Cidade: %s\n",nomedacidade1);
     printf("Populacao: %d\n",populacao1);
-    printf("Area em km²: %f\n",areakm1);
-    printf("PIB: %f\n", PIB1);
+    printf("Area: %fkm2\n",areakm1);
+    printf("PIB: %fMilhões de Reais\n", PIB1);
     printf("Numero de pontos turisticos: %d\n",pontosturisticos1);
-    printf("Desidade pupulacional: %.2fhab/km²\n", densidade1);
-    printif("PIB per Capita; %.2fReais\n", perCapita1);
 
 
     // preenchimento de cadastro da carta 2
@@ -91,9 +84,6 @@ int main() {
     printf("Numero de pontos turisticos: \n");
     scanf("%d", &pontosturisticos2);
 
-    densidade2 = populacao2/areakm2;
-
-    perCapita2 = PIB2/populacao2
 
     //Impressão na tela dos dados cadastrados da carta 2 usando o printf
 
@@ -104,10 +94,8 @@ int main() {
     printf("Nome da Cidade: %s\n",nomedacidade2);
     printf("Populacao: %d\n",populacao2);
     printf("Area: %fkm²\n",areakm2);
-    printf("PIB: %f\n", PIB2);
+    printf("PIB: %fMilhões de reais\n", PIB2);
     printf("Numero de pontos turisticos: %d\n",pontosturisticos2);
-    printf("Desidade populacional: %.2fhab/km²\n", densidade2);
-    printf("PIB per Capita: %.2fReais\n", perCapita2);
 
 
 
