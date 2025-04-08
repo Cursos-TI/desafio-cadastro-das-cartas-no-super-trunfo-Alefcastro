@@ -59,7 +59,7 @@ int main() {
 
     //calculo da densidade e do Pib per capita da cidade 1
     densidade1 = (float) (populacao1 / areakm1);
-    PIBpercapita1 = (float) (PIB1 / populacao1);
+    PIBpercapita1 =  (PIB1 * 1e9) / (float)populacao1;
 
 
     // preenchimento de cadastro da carta 2
@@ -90,7 +90,7 @@ int main() {
 
     //calculo da densidade e do PIB per capita da cidade 2
     densidade2 = (float) (populacao2 / areakm2);
-    PIBpercapita2 = (float) (PIB2 / populacao2);
+    PIBpercapita2 =  (PIB2 * 1e9) / (float)populacao2;
 
 
 
