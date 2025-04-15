@@ -18,6 +18,8 @@ int main() {
     int pontosturisticos1, pontosturisticos2;
     float densidade1, densidade2;
     float PIBpercapita1, PIBpercapita2;
+    float superpode1, superpoder2;
+
 
     //Preenchimento de cadastro da carta 1 ultilizando o scanf
     //pede ao usuario que insira os dados da primeira carta
@@ -92,6 +94,11 @@ int main() {
     densidade2 = (float) (populacao2 / areakm2);
     PIBpercapita2 =  (PIB2 * 1e9) / (float)populacao2;
 
+    //calculando o super poder da carta1 
+
+    superpode1 = (float) (populacao1 + areakm1 + PIB1 + pontosturisticos1 + PIBpercapita1) - densidade2;
+    superpode1 = (float) (populacao2 + areakm2 + PIB2 + pontosturisticos2 + PIBpercapita2) - densidade2;
+
 
 
     //Impressão na tela dos dados cadatrados da carta 1 usando o printf 
@@ -121,7 +128,32 @@ int main() {
     printf("PIB: R$ %.3f Milhões de reais.\n", PIB2);
     printf("Numero de pontos turisticos: %d\n",pontosturisticos2);
     printf("Densidade populacional: %.2f habitantes km²\n", densidade2);
-    printf("PIB per capita: %.f Reais\n", PIBpercapita2);
+    printf("PIB per capita: %f Reais\n", PIBpercapita2);
+
+    //comparando cada atributo separadamente para que possa ser escolido cada um e verificar qual a carta vencedora
+    
+    printf("****** COMPARAÇÃO DAS CARTAS, PARA DEFINIR O VENCEDOR ******\n");
+    printf("\n");
+
+    printf("\nas cartas serão comparadas em todos os atributos.\n");
+    printf("Se a carta 1 for vencedora, ira aparecer o numero 1.\n");
+    printf("Se a carta 2 for a vencedora, ira aparecer o numero 0.\n");
+
+    printf("Resultado da comparaçao de cada atributo:\n");
+    printf("\nPopulação 1 > população 2: %d\n", populacao1 > populacao2);
+    printf("Area 1 > Area 2: %3f km²\n", areakm1 > areakm2);
+    printf("PIB 1 > PIB 2: %.3f Milhoes de Reais\n", PIB1 > PIB2);
+    printf("Numero de pontos turisticos 1 > numero de pontos turisticos 2: %d\n", pontosturisticos1 > pontosturisticos2);
+    print("PIB per capita 1 > PIB per capita 2: %f Reais\n", PIBpercapita1 > PIBpercapita2);
+    printf("Densidade 1 < densidade 2 %.2f habitantes km²:", densidade1 < densidade2);
+
+    printf("\n");
+    printf("\nAgora faremos a comparaçao de todos os atrubutos em um super poder:\n");
+    printf("\nSuper poder 1 > super poder 2: %f\n", superpode1 > superpoder2);
+    printf("\n");
+    printf("Fim de jogo");
+
+
 
 
 
