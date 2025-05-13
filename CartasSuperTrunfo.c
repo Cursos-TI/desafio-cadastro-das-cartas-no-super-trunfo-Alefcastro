@@ -1,5 +1,7 @@
 #include <stdio.h>
-
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das Cartas
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
@@ -110,7 +112,7 @@ int main() {
     printf("\nEstado: %c\n",estado1); 
     printf("Codigo da carta: %s\n",codigo1);
     printf("Nome da Cidade: %s\n",nomedacidade1);
-    printf("Populacao: %d de habitantes.\n",populacao1);
+    printf("Populacao: %lu de habitantes.\n",populacao1);
     printf("Area: %.3f km².\n",areakm1);
     printf("PIB: R$ %.3f Milhões de Reais.\n", PIB1);
     printf("Numero de pontos turisticos: %d\n",pontosturisticos1);
@@ -125,7 +127,7 @@ int main() {
     printf("\nEstado: %c\n",estado2); 
     printf("Codigo da carta: %s\n",codigo2);
     printf("Nome da Cidade: %s\n",nomedacidade2);
-    printf("Populacao: %d de habitantes.\n",populacao2);
+    printf("Populacao: %lu de habitantes.\n",populacao2);
     printf("Area: %.3f km².\n",areakm2); 
     printf("PIB: R$ %.3f Milhões de reais.\n", PIB2);
     printf("Numero de pontos turisticos: %d\n",pontosturisticos2);
@@ -137,7 +139,9 @@ int main() {
 
     superpoder1 = populacao1 + areakm1 + PIB1 + pontosturisticos1 + PIBpercapita1 + (1 /densidade1);
     superpoder2 = populacao2 + areakm2 + PIB2 + pontosturisticos2 + PIBpercapita2 + (1 / densidade2);
- printf("\n\n*** MENU DE COMPARAÇÃO DOS ATRIBUTOS ***\n\n");
+ 
+ 
+    printf("\n\n*** MENU DE COMPARAÇÃO DOS ATRIBUTOS ***\n\n");
 
     printf("1. População!\n");
 
