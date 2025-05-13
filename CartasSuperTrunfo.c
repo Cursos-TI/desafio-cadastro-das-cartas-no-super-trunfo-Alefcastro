@@ -18,7 +18,10 @@ int main() {
     long int pontosturisticos1, pontosturisticos2;
     float densidade1, densidade2;
     float PIBpercapita1, PIBpercapita2;
-    float superpode1, superpoder2;
+    float superpoder1, superpoder2;
+    int ataque1, ataque2;
+    int opcao1, opcao2;
+    int resultado1, resultado2;
 
 
     //Preenchimento de cadastro da carta 1 ultilizando o scanf
@@ -132,8 +135,8 @@ int main() {
 
     // calculando o super poder das cartas
 
-    superpode1 = populacao1 + areakm1 + PIB1 + pontosturisticos1 + PIBpercapita1 + (1 /densidade2);
-    superpode1 = populacao2 + areakm2 + PIB2 + pontosturisticos2 + PIBpercapita2 + (1 / densidade2);
+    superpoder1 = populacao1 + areakm1 + PIB1 + pontosturisticos1 + PIBpercapita1 + (1 /densidade1);
+    superpoder2 = populacao2 + areakm2 + PIB2 + pontosturisticos2 + PIBpercapita2 + (1 / densidade2);
  printf("\n\n*** MENU DE COMPARAÇÃO DOS ATRIBUTOS ***\n\n");
 
     printf("1. População!\n");
